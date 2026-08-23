@@ -47,4 +47,4 @@ This is an independent community project and is not affiliated with or endorsed 
 
 ## 🛟 Releases
 
-Thunderbird 128.14.0 (64-bit) (Windows 8) - August 23, 2026
+Thunderbird 128.14.0 (64-bit) (Windows 8) - August 23, 2026 (LATEST VERSION) ✅
