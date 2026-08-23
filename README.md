@@ -4,7 +4,7 @@ Mozilla Thunderbird 115 was officially the final branch supporting Windows 7, 8,
 
 This project backports modern **Thunderbird 128+ ESR (Nebula UI)** to legacy Windows operating systems, providing modern email protocols, current security standards, and modern rendering engines without requiring Windows 10/11.
 
-https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/blob/main/Thunderbird%20128.14.0%20-%20Windows%208%20-%20v2%20CENSORED.png
+![](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/blob/main/Thunderbird%20128.14.0%20-%20Windows%208%20-%20v2%20CENSORED.png)
 
 ---
 
