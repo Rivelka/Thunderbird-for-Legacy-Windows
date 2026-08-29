@@ -50,3 +50,4 @@ This is an independent community project and is not affiliated with or endorsed 
 ## 🛟 Releases
 
 Thunderbird 128.14.0 (64-bit) (Windows 8) - August 23, 2026 (LATEST VERSION) ✅
+Thunderbird 116.0b7 & 117.0a1 (Windows 7) - August 29, 2026
