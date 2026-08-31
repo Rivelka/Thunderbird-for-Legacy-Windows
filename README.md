@@ -2,7 +2,7 @@
 
 Mozilla Thunderbird officially dropped support for Windows Vista after version 52.9.0 ESR, and for Windows 7 / 8 / 8.1 after version 115.18.0 ESR. Unlike Firefox, Thunderbird did not receive official extended ESR support for legacy platforms.
 
-This project backports modern and intermediate milestone versions of **Mozilla Thunderbird (78 ESR, 88 Beta, 89 Nightly, 116 Beta, 117 Nightly, and 128+ ESR Nebula UI)** to legacy Windows operating systems (NT 6.0 through NT 6.3), restoring modern security standards, updated encryption protocols, and mail rendering engines without requiring Windows 10/11.
+This project backports modern and intermediate milestone versions of **Mozilla Thunderbird (78 ESR, 88 Beta, 89 Nightly Proton UI, 116 Beta, 117 Nightly, and 128+ ESR Nebula UI)** to legacy Windows operating systems (NT 6.0 through NT 6.3), restoring modern security standards, updated encryption protocols, and mail rendering engines without requiring Windows 10/11.
 
 ![](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/blob/main/Thunderbird%20128.14.0%20-%20Windows%208%20-%20v2%20CENSORED.png)
 
@@ -12,10 +12,10 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 
 | OS Version | Architecture | Supported Branches | Status |
 | :--- | :--- | :--- | :--- |
-| **Windows 8.1** (NT 6.3) | x64 / x86 | 128.14.0 ESR, 117.0a1, 116.0b7, 78.14.0 | ✅ Fully Supported |
-| **Windows 8** (NT 6.2) | x64 / x86 | 128.14.0 ESR, 117.0a1, 116.0b7, 78.14.0 | ✅ Fully Supported |
-| **Windows 7 SP1** (NT 6.1) | x64 / x86 | 117.0a1, 116.0b7, 78.14.0 (128 ESR in dev) | ✅ Supported (v78 / v116 / v117) |
-| **Windows Vista SP2** (NT 6.0) | x64 / x86 | 78.14.0, 88.0b3 (89.0a1 in dev) | ✅ Supported (v78 & v88 full) / ⏳ In Progress (v89.0a1) |
+| **Windows 8.1** (NT 6.3) | x64 / x86 | 128.14.0 ESR, 117.0a1 (EN), 116.0b7, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
+| **Windows 8** (NT 6.2) | x64 / x86 | 128.14.0 ESR, 117.0a1 (EN), 116.0b7, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
+| **Windows 7 SP1** (NT 6.1) | x64 / x86 | 117.0a1 (EN), 116.0b7, 78.14.0 (128 ESR in dev) | ✅ Supported (v78 / v116 / v117) |
+| **Windows Vista SP2** (NT 6.0) | x64 / x86 | 78.14.0 (PL/EN), 88.0b3 (PL/EN), 89.0a1 (EN) | ✅ Fully Supported (v78, v88, v89) |
 
 ---
 
@@ -24,16 +24,18 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 * **Subsystem Version Patching:** PE headers patched to allow execution on NT 6.0 (Vista), NT 6.1 (Win 7), and NT 6.2 (Win 8).
 * **Multi-Architecture Builds:** Complete standalone packages available in both **32-bit (x86)** and **64-bit (x64)** architectures.
 * **API Wrappers & Shims:** Custom API export redirection and stubs for `kernel32`, `user32`, `shell32`, `ole32`, `dwmapi`, `uxtheme`, and `api-ms-win-shcore-scaling-l1-1-1.dll`.
+* **Proton UI Backport:** Fully functional Proton design interface on Windows Vista SP2 without requiring an Extended Kernel.
 * **Auto-Update Lock:** Enterprise distribution policy (`distribution/policies.json`) bundled by default to prevent Mozilla servers from overwriting modified binaries.
-* **Bilingual Releases:** All releases provided in both Polish (`pl-PL`) and English (`en-US`).
+* **Language Support:** Bilingual releases provided in Polish (`pl-PL`) and English (`en-US`) (v89.0a1 available currently in `en-US`).
 
 ---
 
 ## 🛟 Releases
 
 * **[Thunderbird 78.14.0, 88.0b3 & 89.0a1](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/78.14.0-88.0b3-89.0a1)** — *Updated August 31, 2026*  
-  Added **Thunderbird 88.0b3 (64-bit & 32-bit, Polish & English)** on **August 31, 2026** alongside complete 78.14.0 builds for **Windows Vista SP2**.  
-  *(Thunderbird 89.0a1 with Proton UI is currently in active development for Windows Vista).*
+  - Added **Thunderbird 89.0a1 Proton UI** (32-bit & 64-bit, English `en-US`) for **Windows Vista SP2**.
+  - Added **Thunderbird 88.0b3** (32-bit & 64-bit, Polish & English) for **Windows Vista SP2**.
+  - Includes full standalone releases of **Thunderbird 78.14.0** (32-bit & 64-bit, PL & EN).
 * **[Thunderbird 116.0b7 & 117.0a1](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/116.0b7-117.0a1)** — *August 29, 2026*  
   Added support for **Windows 7 SP1** (both 32-bit and 64-bit releases in PL and EN).
 * **[Thunderbird 128.14.0 v1](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-1)** — *August 23, 2026*  
@@ -55,7 +57,8 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 - [x] Release of Thunderbird 116.0b7 & 117.0a1 for Windows 7 (32-bit and 64-bit).
 - [x] Full release of Thunderbird 78.14.0 for Windows Vista SP2 (32-bit & 64-bit, PL & EN).
 - [x] Full release of Thunderbird 88.0b3 for Windows Vista SP2 (32-bit & 64-bit, PL & EN).
-- [ ] Backport Thunderbird 89.0a1 (Proton UI) to Windows Vista SP2 (32-bit & 64-bit).
+- [x] Release of Thunderbird 89.0a1 (Proton UI) for Windows Vista SP2 (32-bit & 64-bit, EN).
+- [ ] Polish language (`pl-PL`) localization package for Thunderbird 89.0a1.
 - [ ] Backport Thunderbird 128 ESR to Windows 7 SP1 (via `pathcch` & `combase` proxy layers).
 - [ ] Native DWM/Aero frame and classic UI cleanup (`userChrome.css`).
 
