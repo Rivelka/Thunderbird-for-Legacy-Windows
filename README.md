@@ -27,7 +27,7 @@ This project backports modern and intermediate milestone versions of **Mozilla T
   * Redirected thread affinity calls (`GetThreadGroupAffinity` / `SetThreadGroupAffinity`).
   * Stubbed missing Windows Error Reporting calls (`WerRegisterRuntimeExceptionModule`, `WerUnregisterRuntimeExceptionModule` $\to$ `WerRegisterFile` / `WerUnregisterFile`).
   * Redirected missing kernel, shell, user, and DWM calls (`TryAcquireSRWLockExclusive`, `K32*` functions, `SetGestureConfig`, `DwmInvalidateIconicBitmaps`, etc.).
-* **Proton UI Implementation:** First functional Proton design interface running natively on Windows Vista SP2.
+* **Proton & Nebula UI Implementations:** Modern interface backports running smoothly on legacy Windows desktop compositors.
 * **Auto-Update Lock:** Enterprise distribution policies (`distribution/policies.json`) bundled by default to prevent binaries from being overwritten by Mozilla update servers.
 * **Bilingual Packages:** Available in Polish (`pl-PL`) and English (`en-US`).
 
@@ -35,6 +35,8 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 
 ## 🛟 Releases
 
+* **[Thunderbird 128.14.0 v1 (32-bit)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-1-x86)** — *September 25, 2026*  
+  Added official **32-bit (x86)** standalone release of **Thunderbird 128.14.0 ESR (Nebula UI)** for **Windows 8** and **Windows 8.1** (PL & EN).
 * **[Thunderbird 78.14.0, 88.0b3, 89.0a1, 90.0b3 & 91.0a1 (Windows Vista)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/78.14.0-88.0b3-89.0a1)** — *Updated August 31, 2026*  
   * **Thunderbird 88.0b3:** Fully working text and UI font rendering (32-bit & 64-bit, PL & EN).
   * **Thunderbird 89.0a1 (2021-03-29 Build):** Fully working text and Proton UI font rendering (32-bit & 64-bit, EN).
@@ -45,7 +47,7 @@ This project backports modern and intermediate milestone versions of **Mozilla T
     * *Thunderbird 91.0a1 (2021-06-14 Build)* — 64-bit (EN).
 * **[Thunderbird 116.0b7 & 117.0a1](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/116.0b7-117.0a1)** — *August 29, 2026*  
   Added support for **Windows 7 SP1** (both 32-bit and 64-bit releases in PL and EN).
-* **[Thunderbird 128.14.0 v1](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-1)** — *August 23, 2026*  
+* **[Thunderbird 128.14.0 v1 (64-bit)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-1)** — *August 23, 2026*  
   Initial **128 ESR (Nebula UI)** release for Windows 8 / 8.1 (64-bit).
 
 ---
@@ -61,13 +63,15 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 ## 🗺️ Roadmap
 
 - [x] Initial release of Thunderbird 128 ESR for Windows 8 / 8.1 (64-bit).
+- [x] Release of Thunderbird 128 ESR for Windows 8 / 8.1 (32-bit).
 - [x] Release of Thunderbird 116.0b7 & 117.0a1 for Windows 7 (32-bit and 64-bit).
 - [x] Full release of Thunderbird 78.14.0 for Windows Vista SP2 (32-bit & 64-bit, PL & EN).
 - [x] Full release of Thunderbird 88.0b3 for Windows Vista SP2 (32-bit & 64-bit, PL & EN).
 - [x] Functional Proton UI release: Thunderbird 89.0a1 (2021-03-29) for Windows Vista SP2 (32-bit & 64-bit).
 - [x] Bootstrapped execution of Thunderbird 90.0b3 and 91.0a1 on Windows Vista SP2.
+- [ ] Backport Thunderbird 128 ESR (32-bit / 64-bit) to Windows 7 SP1 (via `pathcch` & `combase` proxy layers).
 - [ ] Fix DirectWrite / Direct2D font rendering engine for post-April 2021 builds (89.0a1 2021-04-07+, 90.0b3, 91.0a1) on Windows Vista.
-- [ ] Backport Thunderbird 128 ESR to Windows 7 SP1 (via `pathcch` & `combase` proxy layers).
+- [ ] Test and evaluate Thunderbird 128 ESR 32-bit viability on Windows Vista SP2 and Windows XP/2003.
 - [ ] Native DWM/Aero frame and classic UI cleanup (`userChrome.css`).
 
 ---
