@@ -2,7 +2,7 @@
 
 Mozilla Thunderbird officially dropped support for Windows Vista after version 52.9.0 ESR, and for Windows 7 / 8 / 8.1 after version 115.18.0 ESR. Unlike Firefox, Thunderbird did not receive official extended ESR support for legacy platforms.
 
-This project backports modern and intermediate milestone versions of **Mozilla Thunderbird (78 ESR, 88 Beta, 89 Nightly Proton UI, 90 Beta, 91 Nightly, 116 Beta, 117 Nightly, 128+ ESR, and 132+ Nebula UI)** to legacy Windows operating systems (NT 6.0 through NT 6.3) without requiring an Extended Kernel.
+This project backports modern and intermediate milestone versions of **Mozilla Thunderbird (78 ESR, 88 Beta, 89 Nightly Proton UI, 90 Beta, 91 Nightly, 116 Beta, 117 Nightly, 128+ ESR, 132 Release, and 133+ Daily Nebula UI)** to legacy Windows operating systems (NT 6.0 through NT 6.3) without requiring an Extended Kernel.
 
 ![](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/blob/main/Thunderbird%20128.14.0%20-%20Windows%208%20-%20v2%20CENSORED.png)
 
@@ -12,8 +12,8 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 
 | OS Version | Architecture | Supported / Tested Branches | Status |
 | :--- | :--- | :--- | :--- |
-| **Windows 8.1** (NT 6.3) | x64 / x86 | 132.0.1, 128.14.0 ESR, 117.0a1, 116.0b7, 91.0a1, 90.0b3, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
-| **Windows 8** (NT 6.2) | x64 / x86 | 132.0.1, 128.14.0 ESR, 117.0a1, 116.0b7, 91.0a1, 90.0b3, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
+| **Windows 8.1** (NT 6.3) | x64 / x86 | 133.0a1, 132.0.1, 128.14.0 ESR, 117.0a1, 116.0b7, 91.0a1, 90.0b3, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
+| **Windows 8** (NT 6.2) | x64 / x86 | 133.0a1, 132.0.1, 128.14.0 ESR, 117.0a1, 116.0b7, 91.0a1, 90.0b3, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
 | **Windows 7 SP1** (NT 6.1) | x64 / x86 | 117.0a1, 116.0b7, 78.14.0 (128 ESR in active development) | ✅ Supported (v78 / v116 / v117) |
 | **Windows Vista SP2** (NT 6.0) | x64 / x86 | **78.14.0**, **88.0b3**, **89.0a1 (2021-03-29)**<br>*(90.0b3, 91.0a1 & 89.0a1 2021-04-07: executable with font glitch)* | ✅ Supported (Working Fonts)<br>⚠️ Experimental (Broken Font) |
 
@@ -27,15 +27,19 @@ This project backports modern and intermediate milestone versions of **Mozilla T
   * Redirected thread affinity calls (`GetThreadGroupAffinity` / `SetThreadGroupAffinity`).
   * Stubbed missing Windows Error Reporting calls (`WerRegisterRuntimeExceptionModule`, `WerUnregisterRuntimeExceptionModule` $\to$ `WerRegisterFile` / `WerUnregisterFile`).
   * Redirected missing kernel, shell, user, and DWM calls (`TryAcquireSRWLockExclusive`, `K32*` functions, `SetGestureConfig`, `DwmInvalidateIconicBitmaps`, etc.).
-* **Proton & Nebula UI Implementations:** Modern interface backports (up to Thunderbird 132 Nebula UI) running smoothly on legacy Windows desktop compositors.
+* **Proton & Nebula UI Implementations:** Modern interface backports (up to Thunderbird Daily 133 Nebula UI) running smoothly on legacy Windows desktop compositors.
 * **Auto-Update Lock:** Enterprise distribution policies (`distribution/policies.json`) bundled by default to prevent binaries from being overwritten by Mozilla update servers.
-* **Bilingual Packages:** Complete standalone releases available in Polish (`pl-PL`) and English (`en-US`).
+* **Language Availability:** Packages available in Polish (`pl-PL`) and English (`en-US`) depending on branch release.
 
 ---
 
 ## 🛟 Releases
 
-* **[Thunderbird 132.0.1 (Windows 8 / 8.1)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/132.0.1)** — *September 28, 2026*  
+* **[Thunderbird Daily 133.0a1 (Windows 8 / 8.1)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/132.0.1-1)** — *September 28, 2026*  
+  Added standalone release of **Thunderbird Daily 133.0a1 (2024-10-02 Build)** featuring **Nebula UI** for **Windows 8** and **Windows 8.1**:
+  * Full support for both **32-bit (x86)** and **64-bit (x64)** architectures.
+  * Available in **English (`en-US`)**.
+* **[Thunderbird 132.0.1 (Windows 8 / 8.1)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/132.0.1-1)** — *September 28, 2026*  
   Added official standalone release of **Thunderbird 132.0.1 (Nebula UI)** for **Windows 8** and **Windows 8.1**:
   * Full support for both **32-bit (x86)** and **64-bit (x64)** architectures.
   * Available in **Polish (`pl-PL`)** and **English (`en-US`)**.
@@ -69,14 +73,15 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 - [x] Initial release of Thunderbird 128 ESR for Windows 8 / 8.1 (64-bit).
 - [x] Release of Thunderbird 128 ESR for Windows 8 / 8.1 (32-bit).
 - [x] Release of Thunderbird 132.0.1 for Windows 8 / 8.1 (32-bit and 64-bit, PL & EN).
+- [x] Release of Thunderbird Daily 133.0a1 (2024-10-02) for Windows 8 / 8.1 (32-bit and 64-bit, EN).
 - [x] Release of Thunderbird 116.0b7 & 117.0a1 for Windows 7 (32-bit and 64-bit).
 - [x] Full release of Thunderbird 78.14.0 for Windows Vista SP2 (32-bit & 64-bit, PL & EN).
 - [x] Full release of Thunderbird 88.0b3 for Windows Vista SP2 (32-bit & 64-bit, PL & EN).
 - [x] Functional Proton UI release: Thunderbird 89.0a1 (2021-03-29) for Windows Vista SP2 (32-bit & 64-bit).
 - [x] Bootstrapped execution of Thunderbird 90.0b3 and 91.0a1 on Windows Vista SP2.
-- [ ] Backport Thunderbird 128 ESR & 132 (32-bit / 64-bit) to Windows 7 SP1 (via `pathcch` & `combase` proxy layers).
+- [ ] Backport Thunderbird 128 ESR (32-bit / 64-bit) to Windows 7 SP1 (via `pathcch` & `combase` proxy layers).
 - [ ] Fix DirectWrite / Direct2D font rendering engine for post-April 2021 builds (89.0a1 2021-04-07+, 90.0b3, 91.0a1) on Windows Vista.
-- [ ] Test and evaluate Thunderbird 128 ESR / 132 viability on Windows Vista SP2 and Windows XP/2003.
+- [ ] Test and evaluate Thunderbird 128 ESR / 132 / 133 viability on Windows Vista SP2 and Windows XP/2003.
 - [ ] Native DWM/Aero frame and classic UI cleanup (`userChrome.css`).
 
 ---
