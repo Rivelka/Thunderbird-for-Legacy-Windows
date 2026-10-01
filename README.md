@@ -36,20 +36,20 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 
 ## 🛟 Releases
 
-* **[Thunderbird 128.14.0 (Windows 7 SP1 - 32-bit)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-win7-x86)** — *October 1, 2026*  
+* **[Thunderbird 128.14.0 (Windows 7 SP1 - 32-bit)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-v2)** — *October 1, 2026*  
   Added standalone **32-bit (x86)** release of **Thunderbird 128.14.0 ESR (Nebula UI)** natively backported to **Windows 7 SP1** via source code modifications:
   * Built directly from modified `comm-esr128` sources without requiring an Extended Kernel.
   * Native Aero Glass frame and full IMAP/POP3/HTML mail rendering support.
   * Available in **Polish (`pl-PL`)** and **English (`en-US`)**.
-* **[Thunderbird Daily 133.0a1 (Windows 8 / 8.1)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/133.0a1-20241002)** — *September 28, 2026*  
+* **[Thunderbird Daily 133.0a1 (Windows 8 / 8.1)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/132.0.1-1)** — *September 28, 2026*  
   Added standalone release of **Thunderbird Daily 133.0a1 (2024-10-02 Build)** featuring **Nebula UI** for **Windows 8** and **Windows 8.1**:
   * Full support for both **32-bit (x86)** and **64-bit (x64)** architectures.
   * Available in **English (`en-US`)**.
-* **[Thunderbird 132.0.1 (Windows 8 / 8.1)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/132.0.1)** — *September 28, 2026*  
+* **[Thunderbird 132.0.1 (Windows 8 / 8.1)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/132.0.1-1)** — *September 28, 2026*  
   Added official standalone release of **Thunderbird 132.0.1 (Nebula UI)** for **Windows 8** and **Windows 8.1**:
   * Full support for both **32-bit (x86)** and **64-bit (x64)** architectures.
   * Available in **Polish (`pl-PL`)** and **English (`en-US`)**.
-* **[Thunderbird 128.14.0 v1 (32-bit)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-1-x86)** — *September 25, 2026*  
+* **[Thunderbird 128.14.0 v1 (32-bit)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-v1)** — *September 25, 2026*  
   Added official **32-bit (x86)** standalone release of **Thunderbird 128.14.0 ESR (Nebula UI)** for **Windows 8** and **Windows 8.1** (PL & EN).
 * **[Thunderbird 78.14.0, 88.0b3, 89.0a1, 90.0b3 & 91.0a1 (Windows Vista)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/78.14.0-88.0b3-89.0a1)** — *Updated August 31, 2026*  
   * **Thunderbird 88.0b3:** Fully working text and UI font rendering (32-bit & 64-bit, PL & EN).
