@@ -4,7 +4,7 @@ Mozilla Thunderbird officially dropped support for Windows Vista after version 5
 
 This project backports modern and intermediate milestone versions of **Mozilla Thunderbird (78 ESR, 88 Beta, 89 Nightly Proton UI, 90 Beta, 91 Nightly, 116 Beta, 117 Nightly, 128+ ESR, 132 Release, and 133+ Daily Nebula UI)** to legacy Windows operating systems (NT 6.0 through NT 6.3) without requiring an Extended Kernel.
 
-![]([https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/blob/main/Thunderbird%20128.14.0%20-%20Windows%207%20-%20CENSORED.png)
+![Thunderbird 128.14.0 on Windows 7](Thunderbird%20128.14.0%20-%20Windows%207%20-%20v2%20-%20CENSORED.png)
 
 ---
 
