@@ -14,7 +14,7 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 | :--- | :--- | :--- | :--- |
 | **Windows 8.1** (NT 6.3) | x64 / x86 | 133.0a1, 132.0.1, 128.14.0 ESR, 117.0a1, 116.0b7, 91.0a1, 90.0b3, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
 | **Windows 8** (NT 6.2) | x64 / x86 | 133.0a1, 132.0.1, 128.14.0 ESR, 117.0a1, 116.0b7, 91.0a1, 90.0b3, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
-| **Windows 7 SP1** (NT 6.1) | x64 / x86 | **128.14.0 ESR (x86)**, 117.0a1, 116.0b7, 78.14.0<br>*(x64 128 ESR, 132 & 133 in active development)* | ✅ Supported (v78 / v116 / v117 / **v128 x86**) |
+| **Windows 7 SP1** (NT 6.1) | x64 / x86 | **128.14.0 ESR (x64 / x86)**, 117.0a1, 116.0b7, 78.14.0<br>*(132 & 133 in active development)* | ✅ Supported (v78 / v116 / v117 / **v128 ESR**) |
 | **Windows Vista SP2** (NT 6.0) | x64 / x86 | **78.14.0**, **88.0b3**, **89.0a1 (2021-03-29)**<br>*(90.0b3, 91.0a1 & 89.0a1 2021-04-07: executable with font glitch)* | ✅ Supported (Working Fonts)<br>⚠️ Experimental (Broken Font) |
 
 ---
@@ -36,6 +36,11 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 
 ## 🛟 Releases
 
+* **[Thunderbird 128.14.0 (Windows 7 SP1 - 64-bit)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-v3)** — *October 2, 2026*  
+  Added native standalone **64-bit (x64)** release of **Thunderbird 128.14.0 ESR (Nebula UI)** for **Windows 7 SP1** built from source:
+  * Compiled directly from modified `comm-esr128` sources with no Extended Kernel required.
+  * Full 64-bit memory addressing, native Aero Glass frame integration, and complete IMAP/POP3/HTML mail rendering.
+  * Available in **Polish (`pl-PL`)** and **English (`en-US`)**.
 * **[Thunderbird 128.14.0 (Windows 7 SP1 - 32-bit)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-v2)** — *October 1, 2026*  
   Added standalone **32-bit (x86)** release of **Thunderbird 128.14.0 ESR (Nebula UI)** natively backported to **Windows 7 SP1** via source code modifications:
   * Built directly from modified `comm-esr128` sources without requiring an Extended Kernel.
@@ -79,6 +84,7 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 - [x] Initial release of Thunderbird 128 ESR for Windows 8 / 8.1 (64-bit).
 - [x] Release of Thunderbird 128 ESR for Windows 8 / 8.1 (32-bit).
 - [x] Backport Thunderbird 128.14.0 ESR (32-bit) to Windows 7 SP1 via source-level modifications (`comm-esr128`, PL & EN).
+- [x] Backport Thunderbird 128.14.0 ESR (64-bit) to Windows 7 SP1 via source-level modifications (`comm-esr128`, PL & EN).
 - [x] Release of Thunderbird 132.0.1 for Windows 8 / 8.1 (32-bit and 64-bit, PL & EN).
 - [x] Release of Thunderbird Daily 133.0a1 (2024-10-02) for Windows 8 / 8.1 (32-bit and 64-bit, EN).
 - [x] Release of Thunderbird 116.0b7 & 117.0a1 for Windows 7 (32-bit and 64-bit).
@@ -86,7 +92,7 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 - [x] Full release of Thunderbird 88.0b3 for Windows Vista SP2 (32-bit & 64-bit, PL & EN).
 - [x] Functional Proton UI release: Thunderbird 89.0a1 (2021-03-29) for Windows Vista SP2 (32-bit & 64-bit).
 - [x] Bootstrapped execution of Thunderbird 90.0b3 and 91.0a1 on Windows Vista SP2.
-- [ ] Backport Thunderbird 128 ESR (64-bit), 132 & 133 to Windows 7 SP1.
+- [ ] Backport Thunderbird 132 & 133 (32-bit / 64-bit) to Windows 7 SP1.
 - [ ] Fix DirectWrite / Direct2D font rendering engine for post-April 2021 builds (89.0a1 2021-04-07+, 90.0b3, 91.0a1) on Windows Vista.
 - [ ] Test and evaluate Thunderbird 128 ESR / 132 / 133 viability on Windows Vista SP2 and Windows XP/2003.
 - [ ] Native DWM/Aero frame and classic UI cleanup (`userChrome.css`).
