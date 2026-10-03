@@ -36,7 +36,7 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 
 ## 🛟 Releases
 
-* **[Thunderbird 128.14.0 (Windows 7 SP1 - 64-bit)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-v3)** — *October 2, 2026*   (Minor update on October 3, 2026 - 64-bit only - Disabled updates)
+* **[Thunderbird 128.14.0 (Windows 7 SP1 - 64-bit)](https://github.com/Rivelka/Thunderbird-for-Legacy-Windows/releases/tag/128.14.0-v3)** — *October 2, 2026* *(Minor update on October 3, 2026 - 64-bit only - Disabled updates)*
   Added native standalone **64-bit (x64)** release of **Thunderbird 128.14.0 ESR (Nebula UI)** for **Windows 7 SP1** built from source:
   * Compiled directly from modified `comm-esr128` sources with no Extended Kernel required.
   * Full 64-bit memory addressing, native Aero Glass frame integration, and complete IMAP/POP3/HTML mail rendering.
