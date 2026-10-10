@@ -15,7 +15,7 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 | **Windows 8.1** (NT 6.3) | x64 / x86 | 133.0a1, 132.0.1, 128.14.0 ESR, 117.0a1, 116.0b7, 91.0a1, 90.0b3, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
 | **Windows 8** (NT 6.2) | x64 / x86 | 133.0a1, 132.0.1, 128.14.0 ESR, 117.0a1, 116.0b7, 91.0a1, 90.0b3, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
 | **Windows 7 SP1** (NT 6.1) | x64 / x86 | **128.14.0 ESR (x64 / x86)**, 117.0a1, 116.0b7, 78.14.0<br>*(132 & 133 in active development)* | ✅ Supported (v78 / v116 / v117 / **v128 ESR**) |
-| **Windows Vista SP2** (NT 6.0) | x64 / x86 | **78.14.0**, **88.0b3**, **89.0a1 (2021-03-29)**<br>*(90.0b3, 91.0a1 & 89.0a1 2021-04-07: executable with font glitch)* | ✅ Supported (Working Fonts)<br>⚠️ Experimental (Broken Font) |
+| **Windows Vista SP2** (NT 6.0) | x64 / x86 | **78.14.0**, **88.0b3**, **89.0a1 (2021-03-29)**<br>*(90.0b3, 91.0a1 & 89.0a1 2021-04-07: executable with font glitch)*<br>*(128 ESR, 132 & 133 in active development)* | ✅ Supported (Working Fonts)<br>⚠️ Experimental (Broken Font) |
 
 ---
 
