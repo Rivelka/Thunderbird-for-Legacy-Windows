@@ -14,8 +14,8 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 | :--- | :--- | :--- | :--- |
 | **Windows 8.1** (NT 6.3) | x64 / x86 | **153.7.0 ESR (x64 / x86)**, **140.17.0 ESR (x86)**, 133.0a1, 132.0.1, 128.14.0 ESR, 117.0a1, 116.0b7, 91.0a1, 90.0b3, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
 | **Windows 8** (NT 6.2) | x64 / x86 | **153.7.0 ESR (x64 / x86)**, **140.17.0 ESR (x86)**, 133.0a1, 132.0.1, 128.14.0 ESR, 117.0a1, 116.0b7, 91.0a1, 90.0b3, 89.0a1, 88.0b3, 78.14.0 | ✅ Fully Supported |
-| **Windows 7 SP1** (NT 6.1) | x64 / x86 | **153.7.0 ESR (x64 / x86)**, **140.17.0 ESR (x86)**, **128.14.0 ESR (x64 / x86)**, 117.0a1, 116.0b7, 78.14.0<br>*(x64 140 ESR, 132 & 133 in active development)* | ✅ Supported (v78 / v116 / v117 / **v128 ESR** / **v140 x86** / **v153 ESR**) |
-| **Windows Vista SP2** (NT 6.0) | x64 / x86 | **153.7.0 ESR (x64 / x86)**, **140.17.0 ESR (x86)**, **128.14.0 ESR (x64 / x86)**, **89.0a1 (2021-03-29)**, **88.0b3**, **78.14.0**<br>*(90.0b3, 91.0a1 & 89.0a1 2021-04-07: executable with font glitch)*<br>*(x64 140 ESR, 132 & 133 in active development)* | ✅ Supported (Working Fonts: v78 / v88 / v89 / **v128 ESR** / **v140 x86** / **v153 ESR**)<br>⚠️ Experimental (Broken Font: v90 / v91) |
+| **Windows 7 SP1** (NT 6.1) | x64 / x86 | **153.7.0 ESR (x64 / x86)**, **140.17.0 ESR (x86)**, **128.14.0 ESR (x64 / x86)**, 117.0a1, 116.0b7, 78.14.0 | ✅ Supported (v78 / v116 / v117 / **v128 ESR** / **v140 x86** / **v153 ESR**) |
+| **Windows Vista SP2** (NT 6.0) | x64 / x86 | **153.7.0 ESR (x64 / x86)**, **140.17.0 ESR (x86)**, **128.14.0 ESR (x64 / x86)**, **89.0a1 (2021-03-29)**, **88.0b3**, **78.14.0**<br>*(90.0b3, 91.0a1 & 89.0a1 2021-04-07: executable with font glitch)* | ✅ Supported (Working Fonts: v78 / v88 / v89 / **v128 ESR** / **v140 x86** / **v153 ESR**)<br>⚠️ Experimental (Broken Font: v90 / v91) |
 
 ---
 
@@ -116,9 +116,6 @@ This project backports modern and intermediate milestone versions of **Mozilla T
 - [x] Full release of Thunderbird 88.0b3 for Windows Vista SP2 (32-bit & 64-bit, PL & EN).
 - [x] Functional Proton UI release: Thunderbird 89.0a1 (2021-03-29) for Windows Vista SP2 (32-bit & 64-bit).
 - [x] Bootstrapped execution of Thunderbird 90.0b3 and 91.0a1 on Windows Vista SP2.
-- [ ] Backport Thunderbird 140.17.0 ESR (64-bit) to Windows Vista SP2 and Windows 7 SP1.
-- [ ] Backport Thunderbird 132 & 133 (32-bit / 64-bit) to Windows 7 SP1 and Windows Vista SP2.
-- [ ] Fix DirectWrite / Direct2D font rendering engine for intermediate binary-patched builds (89.0a1 2021-04-07+, 90.0b3, 91.0a1) on Windows Vista.
 - [ ] Test and evaluate Thunderbird 128, 140 & 153 ESR (32-bit) viability on Windows XP SP3 and Windows Server 2003 SP1.
 - [ ] Native DWM/Aero frame and classic UI cleanup (`userChrome.css`).
 
